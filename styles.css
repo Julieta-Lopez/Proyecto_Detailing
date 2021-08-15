@@ -1,3 +1,5 @@
+/* --------------------------------------- CÓDIGO EN COMÚN ------------------------------------------- */
+
 /* ETIQUETA RAIZ */
 
 html {
@@ -83,28 +85,84 @@ a {
   transition: all 0.3s;
 }
 
-/*-- MEDIA QUERIS HEADER--*/
-@media (max-width: 768px) {
-  .header {
-    height: 100vh;
-    align-items: center;
-    padding-top: 7%;
-    position: static;
-  }
+/*--------------- FOOTER ---------------*/
 
-  .header-content {
-    flex-direction: column;
-    margin: 0;
-    gap: 1rem;
-  }
+.footer {
+  height: 60rem;
+  background-color: black;
+  position: relative;
+  margin-top: 10%;
+  padding-top: 5%;
+}
 
-  .nav {
-    flex-direction: column;
-    text-align: center;
-    gap: 5rem;
-    padding-bottom: 10%;
-    font-size: 1.7rem;
-  }
+.footer__contenedor {
+  position: absolute;
+  max-width: 120rem;
+  display: grid;
+  grid-template-columns: 44rem 35rem 30rem;
+  grid-template-rows: 7rem 20rem 7rem 7rem;
+  justify-content: space-between;
+  column-gap: 2rem;
+  margin-right: 8%;
+  margin-left: 8%;
+}
+
+.footer__titulo {
+  max-width: 35rem;
+  line-height: 3.7rem;
+  margin-top: 1rem;
+}
+
+.footer__titulo--h4 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  font-style: inherit;
+  color: #fff;
+}
+
+.footer__info {
+  max-width: 40rem;
+  padding-top: 1.5rem;
+  color: #fff;
+  justify-content: left;
+  margin-top: 1rem;
+}
+
+.footer__info a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+.footer__info a:hover {
+  color: #e31119;
+}
+
+.footer__info--info {
+  line-height: 2.5rem;
+}
+
+.fa-instagram {
+  padding-top: 7%;
+  margin-right: 2rem;
+}
+
+.fab {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.fab:hover {
+  color: #e31119;
+  transition: all 0.3s;
+}
+
+.footer__flecha {
+  display: flex;
+  margin-left: 8%;
+  margin-right: 8%;
+  justify-content: flex-end;
+  margin-top: 42rem;
 }
 
 /* ----------------------------------- SECTION HOME ------------------------------------------- */
@@ -165,32 +223,6 @@ a {
 
 .subtituloH4--a:hover {
   color: #e31119;
-}
-
-/*-- MEDIA QUERIS HOME--*/
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 120vh;
-    width: 200vh;
-  }
-
-  .hero--img {
-    min-width: 100vh;
-  }
-
-  .info {
-    align-items: center;
-    margin: 0;
-    padding: 0;
-  }
-
-  .tituloH1 {
-    max-width: 50%;
-    font-size: 4rem;
-  }
 }
 
 /*--------------- SECTION 2 ---------------*/
@@ -502,82 +534,4 @@ a {
   font-size: 15px;
 }
 
-/*--------------- FOOTER ---------------*/
-
-.footer {
-  height: 60rem;
-  background-color: black;
-  position: relative;
-  margin-top: 10%;
-  padding-top: 5%;
-}
-
-.footer__contenedor {
-  position: absolute;
-  max-width: 120rem;
-  display: grid;
-  grid-template-columns: 44rem 35rem 30rem;
-  grid-template-rows: 7rem 20rem 7rem 7rem;
-  justify-content: space-between;
-  column-gap: 2rem;
-  margin-right: 8%;
-  margin-left: 8%;
-}
-
-.footer__titulo {
-  max-width: 35rem;
-  line-height: 3.7rem;
-  margin-top: 1rem;
-}
-
-.footer__titulo--h4 {
-  font-size: 2.8rem;
-  font-weight: 400;
-  font-style: inherit;
-  color: #fff;
-}
-
-.footer__info {
-  max-width: 40rem;
-  padding-top: 1.5rem;
-  color: #fff;
-  justify-content: left;
-  margin-top: 1rem;
-}
-
-.footer__info a {
-  text-decoration: none;
-  color: #fff;
-  display: block;
-}
-
-.footer__info a:hover {
-  color: #e31119;
-}
-
-.footer__info--info {
-  line-height: 2.5rem;
-}
-
-.fa-instagram {
-  padding-top: 7%;
-  margin-right: 2rem;
-}
-
-.fab {
-  font-size: 4rem;
-  color: #fff;
-}
-
-.fab:hover {
-  color: #e31119;
-  transition: all 0.3s;
-}
-
-.footer__flecha {
-  display: flex;
-  margin-left: 8%;
-  margin-right: 8%;
-  justify-content: flex-end;
-  margin-top: 42rem;
-}
+/* ----------------------------------- HTML GALERIA ------------------------------------------- */
